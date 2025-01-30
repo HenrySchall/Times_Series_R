@@ -42,14 +42,14 @@ dados1 <- runif(41, min=0, max=100);
 
 # Criando Passeio Aleatório 
 s1 <- ts(dados1, start = 1980, end=2020, frequency=1)
-plot(s1)
+plot(s1, main="Passeio Aleatório")
 
 # Criando 41 números aleatórios entre 0 e 100 (Com repetição)
 dados2 <- sample(0:100, 41, replace=TRUE)
 
 # Criando Passeio Aleatório 
 s2 = ts(dados2, start = c(1980), end=c(2020), frequency=1)
-plot(s2)
+plot(s2, main="Passeio Aleatório")
 
 ##############
 ### Testes ###
@@ -96,7 +96,8 @@ sunspots
 plot(sunspots)
 
 decomposicao <- decompose(sunspots)
-plot(decomposicao)
+par(bg = "white", fg = "black") 
+plot(decomposicao, col = "black", col.main = "black", col.axis = "black", col.lab = "black", border = "black", lwd = 1)
 
 #tsclean remove outliers identificados dessa maneira e os substitui (e quaisquer valores ausentes) por substituições interpoladas linearmente
 suavizacao <- tsclean(dados)
