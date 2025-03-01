@@ -1,16 +1,14 @@
 library(magrittr)
 library(rio)      
 library(timetk)   
-library(dplyr)    
+library(dplyr) 
+library(tidyverse)   
 library(tidyr)    
 library(ggplot2) 
 library(readr)
-library(tidyverse) 
 library(readxl)
 library(forecast)
 library(zoo)
-library(rio) 
-library(timetk)
 library(lubridate)
 library(quantmod)
 library(dygraphs)
@@ -20,13 +18,21 @@ library(discreteRV)
 library(aTSA)
 library(fGarch)
 library(fUnitRoots)
-library(forecast)
 library(vars)
 library(MTS)
 library(seasonal)
 library(stats)
+library(nortest)
+library(scales)
+library(urca)
+library(dlm)
+library(seasonalview)
+library(stringr)
+library(fma)
+library(PerformanceAnalytics)
 
-# if the packages weren't installed, run the commands in R Terminal -> https://github.com/HenrySchall/Data_Science/blob/main/R/Install_Packages.txt
+
+# if some packages weren't installed, run the commands in R Terminal -> https://github.com/HenrySchall/Data_Science/blob/main/R/Arquivos/Install_packages.r
 
 ######################
 ### Série Temporal ###
